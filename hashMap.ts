@@ -1,6 +1,5 @@
 import {MapLinkedList, SetLinkedList} from "./linkedList";
 import type {MapNode, SetNode} from "./linkedList"
-import prompt from "./prompt";
 
 class HashMap {
   #capacity = 16;
@@ -390,13 +389,3 @@ console.log(hashSetTest);
 console.log(hashSetTest.clear());
 
 console.log(hashSetTest);
-
-// prompt("Enter an array of objects with the current structure:\n" 
-//   + "{\n"
-//   + "  data: string\n"
-//   + "}\n"
-// )
-//   .then((value) => {
-//     linkedList = new LinkedList(...JSON.parse(value as string) as Node[]);
-//   })
-
