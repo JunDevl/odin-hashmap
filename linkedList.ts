@@ -214,9 +214,9 @@ export class SetLinkedList {
     return this.search("index", comparator) as SetNode | undefined;
   };
 
-  get(key: string): MapNode | undefined {
+  get(key: string): SetNode | undefined {
     const comparator = (targetKey: string | number) => key == targetKey;
-    return this.search("key", comparator) as MapNode | undefined;
+    return this.search("key", comparator) as SetNode | undefined;
   }
 
   pop(): void {
